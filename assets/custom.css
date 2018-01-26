@@ -1,8 +1,10 @@
+html,body{
+  background: #eee;
+}
 
 .fa-caret-down {
   color: red;
 }
-
 
 .fa-caret-up {
   color: green;
@@ -11,22 +13,62 @@
 /* First two should be green ( or a colour that shows it's good ) */
 tr.contestant:nth-child(1),
 tr.contestant:nth-child(2) {
-  background-color: #9aeda7;
+  color: #9aeda7;
 }
-
 
 /* Next four should be orange ( or average colour ) */
 tr.contestant:nth-child(3),
 tr.contestant:nth-child(4),
 tr.contestant:nth-child(5),
 tr.contestant:nth-child(6) {
-  background-color: #f1f442;
+  color: #f1f442;
 }
-
 
 /* last two should be red ( or a bad colour ) */
 tr.contestant:nth-last-child(1),
 tr.contestant:nth-last-child(2),
 tr.contestant:nth-last-child(3) {
-  background-color: #ff8484;
+  color: #ff8484;
+}
+
+#sgthumb{
+  max-width: 20px;
+  float: left;
+}
+
+.navbar-default .navbar-brand:hover{
+  color: rgb(249, 0, 85);
+}
+
+.navbar-default .navbar-nav > li > a:hover{
+  color: rgb(249, 0, 85);
+}
+
+.navbar-default{
+  background: rgb(42, 26, 62);
+  font-family: spartan;
+  position: sticky;
+  top: 0;
+}
+
+.jumbotron{
+  background: rgb(150, 150, 150);
+}
+
+.table{
+  font-family: spartan;
+  background: rgb(150, 150, 150);
+  border: 2px solid rgb(42, 26, 62);
+}
+
+.table-bordered > tbody > tr > td, .table-bordered > thead > tr > th{
+  border: 2px solid rgb(42, 26, 62);
+  border-bottom: 0;
+  border-left: 0
+  font
+}
+
+@font-face {
+  font-family: "spartan";
+  src: url(../fonts/DDCHardware_OTF/DDCHardware-Regular.otf);
 }
